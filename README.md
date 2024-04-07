@@ -26,7 +26,8 @@ CLI options
 7. -v mount a volume to a container (folder from local machine)
 8. -it interactive mode & tty
 
-EXEC <br>
+EXEC 
+
 Used to run a new command in a running Docker container. Useful to interact with an already running container.
 ```
 docker container exec -it 96e9721dfae6 /bin/bash
