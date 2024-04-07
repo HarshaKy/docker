@@ -53,3 +53,15 @@ docker image history image_name:tag
 docker image inspect image_name:tag
 ```
 Should not pass passwords or other sensitive information through commands because they can be viewed using history and inspect.
+
+Docker EXPORT and IMPORT
+```
+docker export a217666d6ee2 > ./export.tar
+```
+```
+type export.tar| docker import - image_name:tag
+```
+EXPORT vs SAVE: export creates a snapshot of the image (much smaller in size). save creates a copy with all layers (full backup)
+
+Reducing layers (reducing image size)
+1. Combine commands to run in a single line. (For ex: use '&& \' to run multiple install commands)
