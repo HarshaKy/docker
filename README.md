@@ -32,3 +32,24 @@ Used to run a new command in a running Docker container. Useful to interact with
 ```
 docker container exec -it 96e9721dfae6 /bin/bash
 ```
+
+PUSH
+
+Used to push image to docker repository.
+```
+docker image push harshaky/mywebserver:latest
+```
+
+LAYERS
+
+1. Used to optimize image downloads and save disk space. 
+2. Each image is made up of a series of layers.
+3. Each layer corresponds to an instruction in the image's Dockerfile.
+4. Many images can share access to the same layers. Saves space and bandwidth. 
+
+Reading information from Docker image.
+```
+docker image history image_name:tag
+docker image inspect image_name:tag
+```
+Should not pass passwords or other sensitive information through commands because they can be viewed using history and inspect.
