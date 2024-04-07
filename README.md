@@ -8,10 +8,10 @@ ADD vs COPY
 
 RUN vs CMD vs ENTRYPOINT
 
-1. RUN executes when building the image.
+1. RUN executes when building the image. <br>
     a. RUN curl <<<URL>>> <br>
     b. install packages etc.. <br>
-2. CMD and ENTRYPOINT run when the container starts.
+2. CMD and ENTRYPOINT run when the container starts. <br>
     a. ENTRYPOINT determines the main process to run. PID #1<br>
     b. CMD is additional commadns to pass into ENTRYPOINT<br>
     c. CMD can be overridden by passing in arguments to docker run command.<br>
