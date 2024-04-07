@@ -1,0 +1,4 @@
+ADD vs COPY
+
+1. ADD supports URLs but this should not be used as there is no error handling. Instead, use curl.
+2. ADD supports running from tar file.
