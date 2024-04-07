@@ -65,3 +65,5 @@ EXPORT vs SAVE: export creates a snapshot of the image (much smaller in size). s
 
 Reducing layers (reducing image size)
 1. Combine commands to run in a single line. (For ex: use '&& \' to run multiple install commands)
+2. Use export instead of save.
+3. Choose smaller base image.
